@@ -1,6 +1,6 @@
 --!nonstrict
 
-local PANEL_ID = "raycursive/discord-voice-keybinds:panel"
+local PANEL_ID = "raycursive/discord-voice:panel"
 local snapshot = noctalia.state.get("voice_snapshot") or {
   status = "starting",
   status_message = "",

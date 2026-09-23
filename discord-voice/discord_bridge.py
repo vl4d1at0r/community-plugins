@@ -736,7 +736,7 @@ class DiscordVoiceBridge:
         if command == "toggle_mute":
             await self._request(
                 "SET_VOICE_SETTINGS",
-                {"deaf": not self.voice_settings["mute"]},
+                {"mute": not self.voice_settings["mute"]},
                 kind="voice_settings",
             )
         if command == "set_deaf":

@@ -9,8 +9,8 @@
 # On every row, updated_at dates the commit that first shipped that row's version.
 
 [[plugin]]
-id = "raycursive/discord-voice-keybinds"
-name = "Discord Voice Keybinds"
+id = "raycursive/discord-voice"
+name = "Discord Voice"
 version = "0.3.2"
 updated_at = 1786971293
 added_at = 1786971293

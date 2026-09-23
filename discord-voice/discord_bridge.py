@@ -733,6 +733,12 @@ class DiscordVoiceBridge:
                 kind="voice_settings",
             )
             return {"ok": True}
+        if command == "toggle_mute":
+            await self._request(
+                "SET_VOICE_SETTINGS",
+                {"deaf": not self.voice_settings["mute"]},
+                kind="voice_settings",
+            )
         if command == "set_deaf":
             await self._request(
                 "SET_VOICE_SETTINGS",
@@ -740,6 +746,12 @@ class DiscordVoiceBridge:
                 kind="voice_settings",
             )
             return {"ok": True}
+        if command == "toggle_deaf":
+            await self._request(
+                "SET_VOICE_SETTINGS",
+                {"deaf": not self.voice_settings["deaf"]},
+                kind="voice_settings",
+            )
         if command == "set_mic_volume":
             volume = request["value"]
             previous_volume = self.voice_settings["input_volume"]

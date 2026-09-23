@@ -6,7 +6,7 @@ Monitor and control a local Discord desktop voice session without leaving Noctal
 
 | Field | Value |
 | --- | --- |
-| ID | `raycursive/discord-voice-keybind` |
+| ID | `raycursive/discord-voice`|
 | Entries | Bar widget: `bar`; panel: `panel`; service: `bridge` |
 
 ## Requirements
